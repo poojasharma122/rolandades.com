@@ -200,10 +200,10 @@ ul {
 }
 
 .logo {
-    background-image: url(../images/site_logo.png);
+    background-image: url(../images/second_logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 80px;
+    height: 85px;
     width: 90px;
     display: inline-block;
     background-position: left;
