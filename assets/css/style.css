@@ -487,6 +487,20 @@ ul {
     transform: translateY(-4px);
 }
 
+.ssl_logo_img {
+    background-image: url(../images/ssc_log0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 80px;
+}
+
+.ssl_logo {
+    max-width: 148px;
+    margin: 0 auto;
+}
+
 
 /* from journal css end */
 
