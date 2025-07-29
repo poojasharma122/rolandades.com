@@ -89,92 +89,99 @@ ul {
 
 
 /* Header CSS Start */
-.header {
+.sticky-header {
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+    margin: 0 auto;
     z-index: 9999;
-    transition: all 0.3s ease;
-    /* padding: 0.9375rem 0; */
-}
-
-.header.fixed_header {
-    background-color: #391F14;
-    /* box-shadow: #020202d7 0px 2px 10px; */
-    /* box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px; */
-
+    transition: all 0.3s ease-in-out;
+    padding: 0.9375rem 0px;
+    background-color: #391f14;
 }
 
 
-.nav {
+.main-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 5px;
+    padding: 0.9375rem 0;
 }
 
-.brand {
-    display: inline-block;
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand-container {
     text-align: center;
     vertical-align: middle;
+    display: inline-block;
+}
+
+.brand-container a,
+.footer-logo a {
+    background-image: url(../images/second_logo.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5.75rem;
+    width: 14.75rem;
+    display: block
 }
 
 
-.menu-toggle {
+.menu-toggle-btn {
     display: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: right;
     cursor: pointer;
     margin: auto 0;
     z-index: 60;
-    background: url("../images/menu.png") no-repeat center / contain;
+    background-image: url("../images/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.sticky-header.fixed_header .menu-toggle-btn {
+    filter: invert(1);
+}
 
-
-.menu {
+.navigation-menu {
     display: flex;
 }
 
-.menu-list {
+.navigation-menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.menu-link:hover {
-    color: #a85432;
-}
-
-.menu-item {
-    margin: 0;
-}
-
-.menu-link.active,
-.menu-link:hover {
-    color: #a85432;
-}
-
-.menu-link {
-    padding: 10px;
+.navigation-menu ul li a {
+    padding: 0.625rem;
     display: inline-block;
+    text-align: center;
     text-decoration: none;
+    line-height: normal;
     position: relative;
     color: #fff;
-    letter-spacing: 0px;
+    letter-spacing: 0.5px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
+.sticky-header.fixed_header .navigation-menu ul li a {
+    color: #422818;
+}
 
-
-.menu-link::after {
+.navigation-menu ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -183,34 +190,36 @@ ul {
     height: 1.5px;
     bottom: 0;
     left: 0;
-    transition: all 0.3s ease;
+    right: 0;
+    background-color: #fff;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
 }
 
-.menu-link.active::after,
-.menu-link:hover::after {
+.sticky-header.fixed_header .navigation-menu ul li a::after {
+    background-color: #422818;
+}
+
+.navigation-menu ul li a.active::after {
+    transform: scaleX(0.9);
+    background-color: #fff;
+    transform-origin: center;
+}
+
+.navigation-menu ul li a:hover::after {
     transform: scaleX(0.9);
 }
 
-.menu-close {
+.menu-close-btn {
     display: none;
-    background: url(../images/close.png) no-repeat center / cover;
-}
-
-.header.white_bg .menu-toggle {
-    filter: invert(1);
-}
-
-.logo {
-    background-image: url(../images/second_logo.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 85px;
-    width: 90px;
-    display: inline-block;
-    background-position: left;
+    background-size: cover;
+    background-image: url(../images/close.png);
 }
 
 /* Header CSS End */
+
 
 
 /* banner section start */
