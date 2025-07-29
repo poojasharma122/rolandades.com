@@ -53,9 +53,9 @@ html{
 html{
     font-size: 14px;
 }
-.feature-innner-card {
+/* .feature-innner-card {
     width: calc(100% - 150px) !important;
-}
+} */
 section.second_section {
     height: auto !important;
 }
@@ -82,6 +82,14 @@ section.second_section {
 .outdoor_image {
     height: 300px;
 }
+
+.where_to_stay_text {
+    padding:20px 0;
+}
+
+.culture_text {
+    padding: 50px !important;
+}
 }
 
 
@@ -102,6 +110,25 @@ section.second_section {
 
 .pb-8 {
     padding-bottom: 2.5rem !important;
+}
+
+.home_content h2 {
+    font-size: 2.125rem !important;
+}
+
+.privacy_inner_content h2 {
+    font-size: 22px !important;
+    line-height: 28px !important;
+}
+
+.privacy_inner_content h5 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+}
+
+.blog_desc h2 {
+    font-size: 1.5rem !important;
+    line-height: 25px !important;
 }
 
 
