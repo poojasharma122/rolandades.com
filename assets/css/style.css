@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&display=swap');
 
@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     line-height: 1;
     letter-spacing: 0.6px;
@@ -239,7 +239,7 @@ ul {
 .home_content h2 {
     font-size: 3rem;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 30px;
 }
 
@@ -653,6 +653,10 @@ section.outdoor_adventure {
     flex: 0 0 auto;
     width: 50%;
     padding: 0;
+}
+
+.outdoor_text {
+    padding: 20px;
 }
 
 
@@ -1135,6 +1139,14 @@ body .slick-track {
     background-repeat: no-repeat;
     position: relative;
 }
+.banner_slides::before {
+    inset: 0;
+    position: absolute;
+    content: '';
+    background-color: rgba( 0 0 0 /50%);
+    background-blend-mode: multiply;
+    z-index: 0;
+}
 
 .slick-prev:before,
 .slick-next:before {
@@ -1186,14 +1198,21 @@ body .slick-track {
 .hotel_heading {
     max-width: 80%;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .hotel_heading h2 {
-    color: #391F14;
+    color: #fff;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.hotel_heading .slider_para {
+    max-width: 715px;
+    margin: 0 auto;
 }
 
 .feature_button_hotel a {
@@ -1266,3 +1285,137 @@ body .slick-track {
 
 
 /* privacy policy css end */
+
+
+
+/* blog main card css start */
+.blog_desc img {
+    object-fit: cover;
+    object-position: center;
+    height: 31.25rem;
+    width: 100%;
+}
+
+.blog_desc {
+    padding: 2.5rem 1.875rem;
+    border-radius: 20px;
+    box-shadow: #191919 0px 3px 8px;
+    background: #fff7f3;
+}
+
+.blog_description_sec hr {
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid #fD8F5F;
+    opacity: 1;
+}
+
+.blog_desc p {
+    color: #313131;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+}
+
+.blog_desc li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.blog_desc li::marker {
+    color: #000;
+}
+
+.blog_desc ul li p {
+    line-height: 1;
+}
+
+.blog_desc h3 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.blog_desc h2 {
+    font-size: 2rem;
+    color: #fD8F5F;
+}
+
+.blog_desc h5 {
+    font-size: 1.2rem;
+    color: #fD8F5F;
+}
+
+.blog_desc table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #818181;
+}
+
+.blog_desc table th,
+.blog_desc table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 1px solid #818181;
+}
+
+.blog_desc table th {
+    background-color: #d5f637;
+    color: #000;
+}
+
+.blog_desc table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.blog_desc .table_wrap {
+    max-width: 600px;
+}
+/* blog main card css end */
+
+
+
+/* Travel Tips CSS Start */
+.travel_tips_card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.2s all linear;
+}
+.travel_tips_card:hover{
+    transform: translateY(-4px);
+}
+.travel_tips_card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #b4b4b4;
+    border-radius: 1.875rem;
+}
+
+.travel_tips_card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #391F14;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+    border-radius: 1.875rem;
+}
+
+.travel_tips_card:hover::after {
+    transform: scaleX(1);
+}
+section.travel_tips_cards_sec {
+    background-color: #fff7f3;
+}
+
+/* Travel Tips CSS End */
