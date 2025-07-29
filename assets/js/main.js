@@ -1,9 +1,9 @@
 // Toggle Menu Functionaliy Start
 $(document).ready(function () {
-  $(".menu-toggle").click(function () {
+  $(".menu-toggle-btn").click(function () {
     $("body").addClass("menuToggle");
   });
-  $(".menu-close").click(function () {
+  $(".menu-close-btn").click(function () {
     $("body").removeClass("menuToggle");
   });
 });
