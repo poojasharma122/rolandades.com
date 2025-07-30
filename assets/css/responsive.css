@@ -80,7 +80,7 @@ section.second_section {
 }
 
 .outdoor_image {
-    height: 300px;
+    height: 300px !important;
 }
 
 .where_to_stay_text {
@@ -89,6 +89,10 @@ section.second_section {
 
 .culture_text {
     padding: 50px !important;
+}
+
+.food_wine_img {
+    height: 351px !important;
 }
 }
 
