@@ -139,5 +139,16 @@ section.second_section {
     margin-top: 0px;
 }
 
+.hotel_heading h2 {
+    font-size: 2.152rem !important;
+    line-height: 32px !important;
+}
+
+.jumping_img {
+    width: 100% !important;
+    height: 200px !important;
+    
+}
+
 
 }

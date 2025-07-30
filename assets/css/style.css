@@ -1444,3 +1444,7 @@ section.travel_tips_cards_sec {
 }
 
 /* Travel Tips CSS End */
+
+.culture_text h5 {
+    line-height: 23px;
+}
