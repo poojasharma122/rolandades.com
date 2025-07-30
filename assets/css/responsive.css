@@ -94,6 +94,15 @@ section.second_section {
 .food_wine_img {
     height: 351px !important;
 }
+
+.jumping_img {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+.main_jumping_content {
+    flex-wrap: wrap !important;
+}
 }
 
 
@@ -144,11 +153,7 @@ section.second_section {
     line-height: 32px !important;
 }
 
-.jumping_img {
-    width: 100% !important;
-    height: 200px !important;
-    
-}
+
 
 
 }

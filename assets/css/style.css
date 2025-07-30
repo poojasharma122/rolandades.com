@@ -367,6 +367,7 @@ ul {
 .feature-innner-card {
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .swiper-slide img {
@@ -704,6 +705,10 @@ section.adventure_sports {
     border-radius: 20px;
     padding: 10px;
     transition: all 0.3s linear;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main_jumping_content:hover {
